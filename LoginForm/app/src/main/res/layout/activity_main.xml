@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:stretchColumns="1,2,3"
+    android:theme="@style/Theme.AppCompat.DayNight"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:paddingTop="100sp"
+        android:paddingBottom="100sp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Login Form"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#008080"
+        android:textSize="40sp"/>
+
+    <EditText
+        android:hint="Please enter the username"
+        android:paddingBottom="20sp"
+        android:id="@+id/username"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:paddingBottom="20sp"
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:hint="Please enter the password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/login"
+        android:text="Login"
+        android:onClick="login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DON't HAVE ACCOUNT ? SIGN UP"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#FF0000"
+        android:id="@+id/result"
+        android:gravity="center"/>
+
+</LinearLayout>

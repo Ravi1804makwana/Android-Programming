@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp"
+            android:text="Ravikumar Makwana"
+            android:textSize="35sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="italic|bold"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/admin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fname"
+            android:layout_marginBottom="5px"
+            android:inputType="text"
+            android:hint="First Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:layout_marginBottom="5px"
+            android:inputType="text"
+            android:hint="Last Name"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:layout_marginBottom="5px"
+            android:inputType="phone"
+            android:hint="Phone No."/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:layout_marginBottom="5px"
+            android:inputType="textEmailAddress"
+            android:hint="Email Address"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:layout_marginBottom="5px"
+            android:id="@+id/address"
+            android:inputType="textMultiLine"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pine Code"
+            android:inputType="number"
+            android:id="@+id/pinecode"
+            android:layout_marginBottom="5px"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:layout_marginBottom="5px"
+            android:id="@+id/username"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="5px"
+            android:id="@+id/password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40px"
+            android:textStyle="bold"
+            android:text="Hobbies : "/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Programming"
+            android:id="@+id/h1"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Coding"
+            android:id="@+id/h2"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/h3"
+            android:textSize="15sp"
+            android:text="Web Development"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Gender:"
+            android:textSize="40px"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                android:textSize="15sp"
+                android:id="@+id/male"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textSize="15sp"
+                android:id="@+id/female"/>
+
+        </RadioGroup>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rating"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10px"
+            android:layout_height="wrap_content"
+            android:text="Submit Details"
+            android:onClick="submit"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_margin="20px"
+                android:src="@mipmap/likedln"
+                android:onClick="linkdln"/>
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:src="@mipmap/github"
+                android:layout_margin="20px"
+                android:onClick="github"/>
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_margin="20px"
+                android:src="@mipmap/hackerrank"
+                android:onClick="hackerrank"/>
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_margin="20px"
+                android:src="@mipmap/logo"
+                android:onClick="website"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
